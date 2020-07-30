@@ -1,0 +1,30 @@
+{
+  "name": "txsign",
+  "version": "0.0.1",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhoujiae/sign"
+  },
+  "keywords": [
+    "sign"
+  ],
+  "dependencies": {
+    "base64-node": "^1.0.0",
+    "bech32": "^1.1.3",
+    "bignumber.js": "^8.1.1",
+    "bip39": "2.5.0",
+    "bn": "git+https://github.com/shineabel/bn.git",
+    "crypto-js": "^3.1.9-1",
+    "dayjs": "^1.7.8",
+    "ethereumjs-tx": "^1.3.7",
+    "ethereumjs-util": "^6.1.0",
+    "numeral": "^2.0.6",
+    "old": "^0.2.0",
+    "protobufjs": "^6.8.8",
+    "scrypt.js": "^0.3.0",
+    "secp256k1": "3.5.0",
+    "sha256": "^0.2.0",
+    "web3-utils": "^1.0.0-beta.52"
+  }
+}
