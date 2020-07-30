@@ -1,19 +1,14 @@
 import axios from 'axios';
-import { Message } from 'element-ui';
-import { baseURL } from '@/constants';
-
-const $ajax = axios.create({ baseURL });
+const baseURL = `https://rest.hashgard.com/gard/api`
+const $ajax = axios.create({
+  baseURL
+});
 
 $ajax.interceptors.response.use(
-  function(config) {
+  function (config) {
     return config;
   },
-  function(error) {
-    Message({
-      type: 'error',
-      message: 'Network Error',
-      center: true
-    });
+  function (error) {
     return Promise.reject(error);
   }
 );

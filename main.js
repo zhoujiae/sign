@@ -1,16 +1,14 @@
-import webc from 'utils/webc.js';
-import ajax from 'utils/ajax.js';
+import webc from './utils/webc.js';
+import ajax from './utils/ajax.js';
 
-export const sendTx = async function (keyStore, nodeInfo, from, pass, type, msg, msgs) {
+export const sendTx = async function(keyStore, nodeInfo, from, pass, type, msg, msgs) {
   // 1. get account state (account_number & sequence)
   let accState = {
     account_number: '0',
     sequence: '0'
   };
   try {
-    const {
-      data
-    } = await ajax.get(`/auth/accounts/${from}`);
+    const { data } = await ajax.get(`/auth/accounts/${from}`);
     accState = data.result.value;
   } catch (e) {
     return Promise.resolve({
