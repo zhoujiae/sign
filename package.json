@@ -2,12 +2,15 @@
   "name": "txsign",
   "version": "0.0.3",
   "main": "main.js",
+  "author": "2598387433@qq.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/zhoujiae/sign"
   },
   "keywords": [
-    "sign"
+    "sign",
+    "block chain",
+    "tx"
   ],
   "dependencies": {
     "axios": "^0.19.2",
